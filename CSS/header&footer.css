@@ -1,0 +1,495 @@
+/* Header  */
+header{
+    width: 100%;
+    background-color: #708065;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+header > div {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header > div > .store-logo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+header > div > .store-logo > div > .logo-info {
+    font-size: 12px;
+}
+
+header > div > .store-logo > img{
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+header > div > .tools {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+
+
+header > div > .tools > input[type='checkbox']{
+    display: none;
+}
+
+header > div > .tools > input[type='checkbox'] + label {
+    position: relative;
+}
+
+header > div > .tools > input[type='checkbox']:checked + label > .line1{
+    position: absolute;
+    top: 8px;
+    left: 0;
+    transform: rotate(135deg);
+}
+
+header > div > .tools > input[type='checkbox']:checked + label > .line3{
+    position: absolute;
+    top: 8px;
+    left: 0;
+    transform: rotate(225deg);
+}
+
+header > div > .tools > input[type='checkbox']:checked + label > .line2{
+    position: absolute;
+    top: 8px;
+    left: 0;
+    transform: rotate(360deg);
+    opacity: 0;
+}
+
+header > div > .tools > .hamburger {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+header > div > .tools > .hamburger > .line1, header > div > .tools > .hamburger > .line3 {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+header > div > .tools > .hamburger > .line2{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+header > div > .tools > input[type='search']{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 300px;
+}
+
+header > div > .tools > input[type='search']:focus{
+    outline-color: white;
+}
+
+header > div > .tools > button{
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+header > div > .tools > button.cart{
+    position: relative;
+}
+header > div > .tools > button.cart > span#cart-quantity{
+    position: absolute;
+    top: -8px;
+    right: -15px;
+    color: yellow;
+    font-size: 15px;
+
+}
+
+header > div > .tools > button:hover{
+    transform: scale(1.1);
+}
+    
+
+header > div > .tools > button > img{
+    filter: invert(100%) sepia(0%) saturate(6942%) hue-rotate(87deg) brightness(98%) contrast(105%);
+    width: 20px;
+    cursor: pointer;
+}
+/* End of Header */
+
+/* Hamburger Menu Mobile  */
+.mobile-hamburger{
+    position: fixed;
+    width: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background-color: #708065;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    transition: all 0.5s ease-in-out;
+}
+
+.mobile-hamburger > .wrapper{
+    margin-top: 90px;
+}
+
+.mobile-hamburger > .wrapper > ul > li > a, .mobile-hamburger > .wrapper > ul > .showsubmenu{
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobile-hamburger > .wrapper > ul > li > a:hover, .mobile-hamburger > .wrapper > ul > .showsubmenu:hover{
+    background-color: #CBD9C2;
+}
+
+.mobile-hamburger > .wrapper > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.mobile-hamburger > .wrapper > div > input[type='search']{
+    padding: 10px;
+    width: 90%;
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+}
+
+.mobile-hamburger > .wrapper > div > input[type='search']:focus{
+    outline-color: white;
+}
+
+.mobile-hamburger > .wrapper > div > button{
+    background-color: transparent;
+    border: none;
+}
+
+.mobile-hamburger > .wrapper > div > button > img{
+    filter: invert(100%) sepia(0%) saturate(6942%) hue-rotate(87deg) brightness(98%) contrast(105%);
+    width: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobile-hamburger > .wrapper > div > button > img:hover{
+    transform: scale(1.1);
+}
+/* End of Hamburger Menu Mobile  */
+
+
+/* Navigation Bar  */
+nav{
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 90px;
+    z-index: 10;
+}
+
+nav > ul{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+nav > ul > li{
+    position: relative;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding: 20px;
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+nav > ul > li > a:hover{
+    color: #708065;
+}
+
+nav > ul > li > a::after,
+.active::after{
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin: 0 auto;
+    width: 0;
+    transform: translateX(-50%);
+    height: 3px;
+    background-color: #708065;
+    transition: all 0.3s ease-in-out;
+}
+
+nav > ul > li > a:hover::after, .active:after{
+    width: 70%;
+}
+nav > div#scroll-bar{
+    width: 100%;
+    height: 5px;
+    background-color: green;
+    scale: 0 1;
+    transform-origin: left;
+    animation: scroll_animation linear;
+    animation-timeline: scroll(y);
+}
+
+@keyframes scroll_animation{
+    to{
+        scale: 1 1;
+    }
+}
+/* End of Navigation Bar  */
+
+/* Hamburger  */
+.hamburger-dropdown{
+    /* margin-top: 149px; */
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-top: 1px solid black;
+    transition: height 0.5s, opacity 1s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    /* transform: translateY(-100%); */
+    height: 0;
+}
+
+.hamburger-dropdown > .hamburger{
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 20px 20px 40px 20px;
+    position: relative;
+}
+
+.hamburger-dropdown > .hamburger > button{
+    border-radius: 20px;
+    /* padding: 8px 20px; */
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background-color: transparent;
+    display: none;
+}
+
+.hamburger-dropdown > .hamburger > button > img{
+    width: 25px;
+}
+
+.hamburger-dropdown > .hamburger > div > h5{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hamburger-dropdown > .hamburger > div > h5 > a{
+    text-decoration: none;
+    color: black;
+}
+
+.hamburger-dropdown > .hamburger > div > ul{
+    list-style: none;
+    line-height: 1.5rem;
+}
+
+.hamburger-dropdown > .hamburger > div > ul > li > a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+}
+.hamburger-dropdown > .hamburger > div > ul > li > a:hover{
+    color: #708065;
+}
+
+.active-ham{
+    visibility: visible;
+    opacity: 1;
+    /* transform: translateY(0); */
+    height: 400px;
+}
+/* End of Hamburger  */
+
+/* Footer  */
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 239, 239);
+}
+
+footer > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 50px 90px 50px;
+}
+
+footer > div > .logo {
+    cursor: pointer;
+}
+
+footer > div > .logo > .logo-section > a > img {
+    width: 70px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+footer > div > .logo > .social-media-icon > a > img {
+    margin-right: 10px;
+    width: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+footer > div > .logo > .social-media-icon > a > img:hover {
+    transform: scale(1.1);
+}
+
+footer > div > div {
+    margin-right: auto;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+footer > div > div > h4 {
+    font-size: 18px;
+}
+
+footer > div > div > ul {
+    margin-top: 15px;
+    font-size: 14px;
+    list-style: none;
+    line-height: 1.7rem;
+}
+
+footer > div > div > ul > li > a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+footer > div > div > ul > li > a:hover {
+    color: gray;
+}
+/* End of Footer  */
+
+@media (max-width: 652px){
+    header > div > .tools {
+        gap: 20px;
+    }
+    header > div > .tools > .hamburger {
+        display: flex;
+    }
+    header > div > .tools > button[class='cart'] > img{
+        width: 25px;
+    }
+    header > div > .tools > input[type='search'], header > div > .tools > button[class='search'], nav{
+        display: none;
+    }
+    .active-mobile-ham{
+        width: 100%;
+    }
+    .hamburger-dropdown{
+        height: 100vh;
+        opacity: 1;
+        transform: translateX(652px);
+        transition: all 0.5s ease-in-out;
+        background-color: #708065;
+        color: white;
+        border-top: 1px solid white;
+    }
+    .active-ham{
+        transform: translateX(0);
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+    .hamburger-dropdown > .hamburger{
+        flex-direction: column;
+        margin-bottom: 100px;
+        
+    }
+    .hamburger-dropdown > .hamburger > button {
+        display: block;   
+    }
+    .hamburger-dropdown > .hamburger > div{
+        border-top: 1px solid white;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .hamburger-dropdown > .hamburger > div > h5{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .hamburger-dropdown > .hamburger > div > ul{
+        padding-left: 10px;
+    }
+    .hamburger-dropdown > .hamburger > div > ul > li > a, .hamburger-dropdown > .hamburger > div > h5 > a{
+        color: white;
+        display: block;
+        transition: all 0.3s ease-in-out;
+    }
+    .hamburger-dropdown > .hamburger > div > ul > li > a:hover, .hamburger-dropdown > .hamburger > div > h5 > a:hover{
+        color: green;
+    }
+    .hamburger-dropdown > .hamburger > div:nth-child(2) {
+        margin-top: 30px;
+    }
+    footer > div {
+        flex-direction: column;
+        gap: 25px;
+    }
+    footer > div > div{
+        width: 100%;
+    }
+    footer > div > div > ul{
+        padding-left: 20px;
+    }
+    footer > div > div > ul > li > a{
+        display: block;
+    }
+}
