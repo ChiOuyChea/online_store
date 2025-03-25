@@ -58,24 +58,10 @@ section:nth-child(2){
     background-position: center;
     background-repeat: no-repeat;
 }
-#profile-wrapper .profile:nth-child(1) > div{
-    background-image: url("../IMG/profile/1.jpg");
-}
-#profile-wrapper .profile:nth-child(2) > div{
+#profile-wrapper .profile > div{
     background-image: url("../IMG/profile/2.jpg");
 }
-#profile-wrapper .profile:nth-child(3) > div{
-    background-image: url("../IMG/profile/3.jpg");
-}
-#profile-wrapper .profile:nth-child(4) > div{
-    background-image: url("../IMG/profile/4.jpg");
-}
-#profile-wrapper .profile:nth-child(5) > div{
-    background-image: url("../IMG/profile/5.jpg");
-}
-#profile-wrapper .profile:nth-child(6) > div{
-    background-image: url("../IMG/profile/6.jpg");
-}
+
 
 @media all and (max-width: 850px){
     section p{
