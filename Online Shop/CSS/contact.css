@@ -1,0 +1,110 @@
+.container #box{
+    box-shadow: 0px 0px 3px dimgray;
+    /* padding: 70px; */
+    border-radius: 3px;
+    width: 70%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+}
+/* .container #box h3{
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    font-size: 4vmin;
+    transform: translate(-50%,0);
+} */
+.container #box #left-side{
+    width: 45%;
+    background-image: url(../IMG/contact-us-1024x884.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: center;
+    background-color: #708065;
+}
+.container #box form{
+    width: 60%;
+    padding: 30px;
+}
+
+.container #box form div:not(:last-child){
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.container #box form div:last-child{
+    text-align: center;
+}
+.container #box form div label{
+    font-size: 2.5vmin;
+    font-weight: 500;
+    color: rgb(74, 74, 74);
+    display: flex;
+    gap: 5px;
+}
+.container #box form div input[type="text"]{
+    padding: 8px;
+    font-size: 17px;
+    width: 70%;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: all ease-in-out 250ms;
+    outline: none;
+    border: none;
+    border: 2px solid dimgray;
+}
+.container #box form div textarea{
+    width: 70%;
+    outline: none;
+    border: 2px solid dimgray;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 8px;
+    resize: none;
+}
+.container #box form div textarea:focus{
+    width: 70%;
+    outline: none;
+    border-color: steelblue;
+}
+.container #box form div input[type="text"]:focus{
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-color: steelblue;
+}
+
+.container #box form div input[type="submit"]{
+    background-color: #708065;
+    padding: 8px 15px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+    width: 150px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease-in-out 200ms;
+}
+.container #box form div input[type="submit"]:hover{
+    background-color: #68765e;
+}
+
+@media all and (max-width: 700px) {
+    .container #box {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 1145px){
+    .container #box #left-side{
+        display: none;
+    }
+    .container #box form{
+        width: 90%;
+    }
+}
